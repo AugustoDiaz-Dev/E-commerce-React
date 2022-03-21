@@ -1,0 +1,83 @@
+:root {
+    --aqua: #00ffff;
+    --blue: #0000ff;
+    --blueviolet: #8a2be2;
+    --coral: #ff7f50;
+    --darkorange: #ff8c00;
+    --deepskyblue: #00bfff;
+    --hotpink: #ff69b4;
+    --indigo: #4b0082;
+    --lightsalmon: #ffa07a;
+    --lime: #00ff00;
+    --magenta: #ff00ff;
+    --mediumspringgreen: #00fa9a;
+    --navy: #000080;
+    --red: #ff0000;
+    --teal: #008080;
+    --turquoise: #40e0d0;
+    --black: #000;
+    --blacklight: #333;
+    --grey: #808080;
+    --greylight: #e5e5e5;
+    --white: #fff;
+    --whitesmoke: #F5F5F5;
+    --yellow: #ffeb3b;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* max-width: 1400px; */
+    margin: 0 auto;
+    font-family: 'Nunito Sans', sans-serif;
+}
+/* .App {
+    max-width: 1300px;
+    margin: 0 auto;
+} */
+
+/* Layout Component */
+.content {
+    padding-top: 5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Component */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.navbar {
+    background-color: var(--yellow)!important;
+}
+.navbar-brand {
+    color: var(--blue)!important;
+    font-weight: 900;
+}
+.nav-link {
+    color: var(--blue)!important;
+}
+.navbar-toggler {
+    color: var(--blue)!important;
+}
+
+/* Footer Component */
+.footer {
+    text-align: center;
+    background-color: var(--yellow)!important;
+    color: var(--blue)!important;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+}
+
+
+ 

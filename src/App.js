@@ -1,10 +1,10 @@
-import './App.css';
 import Homepage from './pages/Homepage';
 import { Route, Routes } from 'react-router-dom'
 import Login from './pages/Login';
 import Registration from './pages/Registration';
 import Cart from './pages/Cart';
 import ProductInfo from './pages/ProductInfo';
+import './styles/layout.css'
 
 function App() {
   return (
