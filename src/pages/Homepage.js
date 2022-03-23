@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import Layout from '../components/Layout'
-import { collection, addDoc, getDocs } from 'firebase/firestore'
+import { collection, getDocs } from 'firebase/firestore'
 import fireDB from '../fireConfig';
 import '../styles/products.css'
+import { useNavigate } from 'react-router-dom';
 // import { productsData } from '../productData';
 
 function Homepage() {
 
     const [products, setProducts] = useState([]);
-
+    const navigate = useNavigate();
     useEffect(() => {
         getData();
     }, []);
@@ -46,13 +47,11 @@ function Homepage() {
                                     <div className="d-flex">
                                         <div className='d-flex flex-column'>
                                             <button>Add to Cart</button>
-                                            <button>View</button>
+                                            <button onClick={() => navigate(`/product-info/${product.id}`)}>View</button>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     })}
                 </div>

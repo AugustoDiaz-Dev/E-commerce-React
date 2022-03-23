@@ -27,3 +27,12 @@
     color: var(--blue);
     font-weight: bold;
 }
+.product-info-img {
+    border-radius: 1rem;
+    height: 50vh;
+    margin: 2rem 0;
+}
+.product-info-body p {
+    width: 40vw;
+    margin: 0 auto;
+}
